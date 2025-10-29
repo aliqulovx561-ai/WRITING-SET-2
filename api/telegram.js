@@ -20,13 +20,14 @@ export default async function handler(req, res) {
   try {
     const { message } = req.body;
 
-    const BOT_TOKEN = process.env.BOT_TOKEN;
-    const CHAT_ID = process.env.CHAT_ID;
+    // Use TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID
+    const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
+    const CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
     if (!BOT_TOKEN || !CHAT_ID) {
       return res.status(500).json({
         success: false,
-        message: 'Server configuration error - BOT_TOKEN or CHAT_ID not set'
+        message: 'Server configuration error - TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID not set'
       });
     }
 
