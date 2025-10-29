@@ -1,14 +1,8 @@
 {
   "name": "ielts-test-vercel",
   "version": "1.0.0",
-  "description": "IELTS Writing Test with Telegram integration",
-  "scripts": {
-    "dev": "vercel dev"
-  },
-  "dependencies": {
-    "axios": "^1.6.0"
-  },
+  "description": "IELTS Writing Test",
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   }
 }
